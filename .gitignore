@@ -16,4 +16,4 @@ config/database.yml
 **.orig
 rerun.txt
 pickle-email-*.html
-
+.idea/
