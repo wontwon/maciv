@@ -1,3 +1,9 @@
+PATH
+  remote: engines
+  specs:
+    admin_console (0.0.1)
+      rails (~> 4.0.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -104,6 +110,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  admin_console!
   jbuilder (~> 1.2)
   pg
   rails (= 4.0.3)
