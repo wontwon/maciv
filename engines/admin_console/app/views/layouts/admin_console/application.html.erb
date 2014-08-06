@@ -8,7 +8,38 @@
 </head>
 <body>
 
-<%= yield %>
+<div id="wrapper">
+
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li><a href="#">Admin Console Home</a></li>
+      <li class="dropdown">
+        <a data-toggle="dropdown" class="dropdown-toggle">Manage Conferences</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Conferences</a></li>
+          <li><a href="#">Staff</a></li>
+          <li><a href="#">Activities</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a data-toggle="dropdown" class="dropdown-toggle">Manage Organizations</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Organizations</a></li>
+          <li><a href="#">Board Members</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Payments</a></li>
+    </ul>
+  </div>
+
+  <div id="page-content-wrapper">
+    <div class="container-fluid">
+      <nav class="navbar navbar-default navbar-fixed-top"></nav>
+      <%= yield %>
+    </div>
+  </div>
+
+</div>
 
 </body>
 </html>
