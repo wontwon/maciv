@@ -18,5 +18,9 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 4.0.3"
 
-  s.add_development_dependency "pg"
+  #s.add_dependency 'uglifier', '>= 1.3.0'
+  #s.add_dependency 'turbolinks'
+  #s.add_dependency 'jbuilder', '~> 1.2'
+
+  s.add_dependency "pg"
 end
