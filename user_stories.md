@@ -8,7 +8,7 @@
 + I will be able to pay for registration using the page
 
 
-##$ As an administrator:
+### As an administrator:
 
 + I want to view all attendees and be able to sort them
 	by school
