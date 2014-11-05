@@ -3,13 +3,13 @@
 <head>
   <title>AdminConsole</title>
   <%= stylesheet_link_tag    'admin_console/application', media: 'all' %>
-  <%= javascript_include_tag 'admin_console/application' %>
+  <%= javascript_include_tag 'admin_console/application', params[:controller] %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body ng-app="app">
 
 <div id="wrapper">
-  <div id="sidebar-wrapper">
+  <div id="sidebar-wrapper" ng-controller="NavCtrl">
     <ul class="sidebar-nav">
       <li><a href="#">Admin Console Home</a></li>
       <li class="dropdown">
@@ -23,7 +23,7 @@
       <li class="dropdown">
         <a data-toggle="dropdown" class="dropdown-toggle">Manage Organizations</a>
         <ul class="dropdown-menu">
-          <li><a href="#">Organizations</a></li>
+          <li><a href="#">Organizations</a></li>{{text}}
           <li><a href="#">Board Members</a></li>
         </ul>
       </li>
