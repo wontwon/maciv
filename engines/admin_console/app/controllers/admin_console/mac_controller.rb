@@ -1,4 +1,4 @@
-require_dependency "admin_console/mac_controller"
+require_dependency "admin_console/application_controller"
 
 module AdminConsole
   class MacController < ApplicationController
